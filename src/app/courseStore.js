@@ -12,7 +12,7 @@ const cousrseStore = (set) => ({
   },
   removeCourse: (courseId) => {
     set((state) => ({
-      courses: state.courses.filter((c) => state.courseId !== courseId),
+      courses: state.courses.filter((course) => course.id !== courseId),
     }));
   },
   toggleCourseStatus: (courseId) => {
